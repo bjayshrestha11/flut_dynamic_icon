@@ -1,0 +1,34 @@
+PODS:
+  - flut_dynamic_icon (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+  - flutter_dynamic_icon (0.0.1):
+    - Flutter
+  - integration_test (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - flut_dynamic_icon (from `.symlinks/plugins/flut_dynamic_icon/ios`)
+  - Flutter (from `Flutter`)
+  - flutter_dynamic_icon (from `.symlinks/plugins/flutter_dynamic_icon/ios`)
+  - integration_test (from `.symlinks/plugins/integration_test/ios`)
+
+EXTERNAL SOURCES:
+  flut_dynamic_icon:
+    :path: ".symlinks/plugins/flut_dynamic_icon/ios"
+  Flutter:
+    :path: Flutter
+  flutter_dynamic_icon:
+    :path: ".symlinks/plugins/flutter_dynamic_icon/ios"
+  integration_test:
+    :path: ".symlinks/plugins/integration_test/ios"
+
+SPEC CHECKSUMS:
+  flut_dynamic_icon: 13382445749fa6f44e2174ec5e39bfb354edbd04
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  flutter_dynamic_icon: fb0cd2f84c817c1a0ddbbc383fbebec3cd5e88d8
+  integration_test: 13825b8a9334a850581300559b8839134b124670
+
+PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
+
+COCOAPODS: 1.11.3
