@@ -7,7 +7,7 @@ import 'flut_dynamic_icon_platform_interface.dart';
 class FlutDynamicIcon {
   Future<void> changeAppIcon({
     required String bundleId,
-    required bool isNewIcon,
+    required String defaultIcon,
     required String iconName,
     required List<String> iconNames,
     bool showAlert = false,
@@ -15,7 +15,7 @@ class FlutDynamicIcon {
     if (Platform.isAndroid) {
       return FlutDynamicIconPlatform.instance.changeAppIcon(
         bundleId: bundleId,
-        isNewIcon: isNewIcon,
+        defaultIcon: defaultIcon,
         iconName: iconName,
         iconNames: iconNames,
       );

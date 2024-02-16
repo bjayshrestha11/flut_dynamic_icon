@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="flut_dynamic_icon_example"
+        android:label="TetoAppIcon"
         android:name="${applicationName}"
         android:icon="@mipmap/teto_icon">
         <activity
@@ -30,32 +30,6 @@
             android:name="flutterEmbedding"
             android:value="2" />
         <!-- this are for the alternate icons -->
-        <activity-alias
-            android:name=".MainActivityAlias"
-            android:enabled="true"
-            android:icon="@mipmap/teto_icon"
-            android:label="TetoAppIcon"
-            android:targetActivity=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity-alias>
-        <activity-alias
-            android:name=".MainActivityAliasteto_icon"
-            android:enabled="false"
-            android:icon="@mipmap/teto_icon"
-            android:label="TetoAppIcon"
-            android:targetActivity=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity-alias>
         <activity-alias
             android:name=".MainActivityAliashalal_icon"
             android:enabled="false"

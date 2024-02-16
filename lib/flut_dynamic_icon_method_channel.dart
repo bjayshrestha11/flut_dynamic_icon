@@ -12,12 +12,12 @@ class MethodChannelFlutDynamicIcon extends FlutDynamicIconPlatform {
   @override
   Future<void> changeAppIcon(
       {required String bundleId,
-      required bool isNewIcon,
+      required String defaultIcon,
       required String iconName,
       required List<String> iconNames}) async {
     dynamic params = {
       "bundleId": bundleId,
-      "isNewIcon": isNewIcon,
+      "defaultIcon": defaultIcon,
       "iconName": iconName,
       "iconNames": iconNames,
     };

@@ -38,18 +38,18 @@ public class FlutDynamicIconPlugin implements FlutterPlugin, MethodCallHandler {
   public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {
     if (call.method.equals("changeAppIcon")) {
       String bundleId = call.argument("bundleId");
-      boolean isNewIcon = call.argument("isNewIcon");
+      String defaultIcon = call.argument("defaultIcon");
       String iconName = call.argument("iconName");
       ArrayList<String> iconNames = call.argument("iconNames");
-      changeAppIcon(bundleId, isNewIcon, iconName, iconNames);
+      changeAppIcon(bundleId, defaultIcon, iconName, iconNames);
       result.success("Success");
     } else {
       result.notImplemented();
     }
   }
 
-  public void changeAppIcon(String bundleId, boolean isNewIcon, String iconName, ArrayList<String> iconNames) {
-    DynamicAppUtils.changeAppIconDynamically(context, bundleId, isNewIcon, iconName, iconNames);
+  public void changeAppIcon(String bundleId, String defaultIcon, String iconName, ArrayList<String> iconNames) {
+    DynamicAppUtils.changeAppIconDynamically(context, bundleId, defaultIcon, iconName, iconNames);
   }
 
   @Override

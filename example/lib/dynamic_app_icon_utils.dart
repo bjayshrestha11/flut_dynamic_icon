@@ -9,10 +9,10 @@ class DynamicAppIconUtils {
       await flutDynamicIcon.changeAppIcon(
         bundleId: "np.com.bjayshrestha.flut_dynamic_icon_example",
         iconName: iconName,
-        isNewIcon: iconName != AppIcons.tetoIcon,
+        defaultIcon: AppIcons.tetoIcon,
         iconNames: AppIcons.appIconList,
       );
-      log("App icon changed successfully", name: "ChangeIcon");
+      log("App icon changed successfully: $iconName", name: "ChangeIcon");
     } catch (e) {
       log(e.toString(), name: "ChangeIcon");
     }
