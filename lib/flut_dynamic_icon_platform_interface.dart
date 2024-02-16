@@ -23,7 +23,11 @@ abstract class FlutDynamicIconPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String?> getPlatformVersion() {
+  Future<void> changeAppIcon(
+      {required String bundleId,
+      required bool isNewIcon,
+      required String iconName,
+      required List<String> iconNames}) {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
 }

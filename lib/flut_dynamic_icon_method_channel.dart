@@ -10,8 +10,17 @@ class MethodChannelFlutDynamicIcon extends FlutDynamicIconPlatform {
   final methodChannel = const MethodChannel('flut_dynamic_icon');
 
   @override
-  Future<String?> getPlatformVersion() async {
-    final version = await methodChannel.invokeMethod<String>('getPlatformVersion');
-    return version;
+  Future<void> changeAppIcon(
+      {required String bundleId,
+      required bool isNewIcon,
+      required String iconName,
+      required List<String> iconNames}) async {
+    dynamic params = {
+      "bundleId": bundleId,
+      "isNewIcon": isNewIcon,
+      "iconName": iconName,
+      "iconNames": iconNames,
+    };
+    await methodChannel.invokeMethod<String>('changeAppIcon', params);
   }
 }
